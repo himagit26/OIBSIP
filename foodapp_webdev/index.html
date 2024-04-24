@@ -1,0 +1,366 @@
+<!-- this is landing page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Food App</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+</head>
+<body>
+   <!-- navbar (note navbar dark means contents will be light color) -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" width="80px" alt="">
+      </a>
+    <!-- button to display when size of screen reduces -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Restaurants</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+   </nav>
+   <!-- header -->
+    <header>
+        <div class="content p-3">
+            <!-- title -->
+            <div class="border rounded mb-3 px-3 title ">
+                <h1 class="display-5 fw-bold ">Sam's Food land</h1>
+                <p class="lead"><i class="fas fa-bowl"></i>
+                  Food is life.Won't you agree my pal?</p>
+            </div>
+            <img src="./images/headersmallimg.jpg" alt="" class="rounded-circle img-fluid d-none d-sm-block" width="10%" height="auto">
+            <!-- banner -->
+            <div class="w-50 mx-auto display-6 text-center banner">
+              Jump right in 
+            </div>
+        </div>
+    </header>
+    
+   <!-- main content -->
+   <div class="container main my-4">
+      <!-- grid of cards -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 my-5 gy-5">
+
+        <!-- column-1 -->
+      <div class="col">
+        <!-- card -->
+          <div class="card h-100" >
+            <img src="./images/desserts.jpg" alt="" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="cardmenu">Desserts</h1>
+              <p>Dessert comes from the French desservir,meaning “to clear the table”  </p>
+              <button class="btn btn-outline-warning" data-bs-target="#item1" data-bs-toggle="collapse"> 
+                Choose
+              </button>
+                <!-- content to be collapsed -->
+                <div class="collapse" id="item1">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">French</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Indian</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Spanish</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+       </div>
+
+        <!-- column-2 -->
+      <div class="col">
+          <!-- card -->
+          <div class="card h-100">
+            <img src="./images/juices.webp" alt="" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="cardmenu">Juices</h1>
+              <p>Juices are a rich source of essential vitamins and minerals, such as vit C, K, Mg  </p>
+              <button class="btn btn-outline-warning" data-bs-target="#item2" data-bs-toggle="collapse"> 
+                Choose
+              </button>
+                <!-- content to be collapsed -->
+                <div class="collapse" id="item2">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">fruits</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Vegetables</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chocolaty</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+
+         <!-- column-3 -->
+        <div class="col">
+          <!-- card -->
+          <div class="card h-100">
+            <img src="./images/manchuria.jpg" alt="" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="cardmenu">Manchuria</h1>
+              <p>Manchurian is a class of Indian Chinese dish made by roughly chopping and deep-frying ingredients  </p>
+              <button class="btn btn-outline-warning" data-bs-target="#item3" data-bs-toggle="collapse"> 
+                Choose
+              </button>
+                <!-- content to be collapsed -->
+                <div class="collapse" id="item3">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Wet</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Dry</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Semi-wet</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- column-4 -->
+        <div class="col">
+          <!-- card -->
+          <div class="card h-100">
+            <img src="./images/noodles.jpg" alt="" class= "w-100 h-80 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="cardmenu">Noodles</h1>
+              <p>Noodles are either rolled flat and cut, stretched, or extruded, into long strips or strings.  </p>
+              <button class="btn btn-outline-warning" data-bs-target="#item4" data-bs-toggle="collapse"> 
+                Choose
+              </button>
+                <!-- content to be collapsed -->
+                <div class="collapse" id="item4">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Spicy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">medium</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">plain</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- column-5 -->
+        <div class="col">
+          <!-- card -->
+          <div class="card h-100">
+            <img src="./images/roti.avif" alt="" class="w-100 card-img-top">
+            <div class="card-body text-center">
+              <h1 class="cardmenu">Lunch meals</h1>
+              <p>Noodles are either rolled flat and cut, stretched, or extruded, into long strips or strings.  </p>
+              <button class="btn btn-outline-warning" data-bs-target="#item5" data-bs-toggle="collapse"> 
+                Choose
+              </button>
+                <!-- content to be collapsed -->
+                <div class="collapse" id="item5">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Rice</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Rotis</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Curries</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+           <!-- column-6 -->
+          <div class="col">
+           <!-- card -->
+           <div class="card h-100">
+             <img src="./images/salads.jpg" alt="" class="w-100 card-img-top">
+             <div class="card-body text-center">
+               <h1 class="cardmenu">Salads</h1>
+               <p>Salad is any of the various “usually cold dishes” including raw greens, vegetables and toppings.  </p>
+               <button class="btn btn-outline-warning" data-bs-target="#item6" data-bs-toggle="collapse"> 
+                 Choose
+               </button>
+                 <!-- content to be collapsed -->
+                 <div class="collapse" id="item6">
+                 <ul class="nav flex-column">
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Raw</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Semi-raw</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">berriess</a>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+          </div>
+           
+           <!-- column-7 -->
+          <div class="col">
+           <!-- card -->
+           <div class="card h-100">
+             <img src="./images/sweets.cms" alt="" class="w-100 card-img-top">
+             <div class="card-body text-center">
+               <h1 class="cardmenu">Sweets</h1>
+               <p>Fresh and Delicious Indian Sweets.From soft to softer and hard to yummier </p>
+               <button class="btn btn-outline-warning" data-bs-target="#item7" data-bs-toggle="collapse"> 
+                 Choose
+               </button>
+                 <!-- content to be collapsed -->
+                 <div class="collapse" id="item7">
+                 <ul class="nav flex-column">
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">gulab jamun</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">kaju barfi</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">rasmalai</a>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+          </div>
+           
+          <!-- column-8 -->
+          <div class="col">
+            <!-- card -->
+            <div class="card h-100">
+              <img src="./images/milshake.jpg" alt="" class="w-100 card-img-top">
+              <div class="card-body text-center">
+                <h1 class="cardmenu">Milkshakes</h1>
+                <p>asy, refreshing and hearty milkshake recipes, both vegetarian and vegan. Enjoy as a healthy drink for breakfast , brunch or as an after-school </p>
+                <button class="btn btn-outline-warning" data-bs-target="#item8" data-bs-toggle="collapse"> 
+                  Choose
+                </button>
+                  <!-- content to be collapsed -->
+                  <div class="collapse" id="item8">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Chocolate</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Butterscoth</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Nuts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+           </div>
+      </div>
+   </div>
+
+   <!-- horizontal card  -->
+   <div class="card mb-3">
+      <div class="row">
+        <div class="col-sm-4">
+          <img 
+          src="./images/horcardfoodimg.png" 
+          alt="img not available" 
+          class="w-100">
+        </div>
+        <div class="col-sm-8 d-flex align-items-center bg-success text-white ">
+          <p class="lead">
+            “Savor the Moments, Savor the Flavors.” “Delight in Every Bite.” “Crafting Culinary Experiences.” “Elevating Taste, Every Day.”Once you try it, you will love it.
+            Fun. Fast. Tasty. Delicious.Food that makes you happy.
+            Wake up your taste buds.
+            Fulfill your comfort food cravings.
+            Feel the joy of mouthwatering food.
+            Quick eats for busy people.
+          </p>
+        </div>
+      </div>
+   </div>
+   <!-- items carousel -->
+   <div class="carousel-slide mb-3 d-none d-sm-block" data-bs-ride="carousel">
+    <div class="carousel-inner ">
+      <div class="carousel-item active" data-bs-interval="1200">
+        <img src="./images/foodcarousel1.jpg" alt="" class=" d-block w-50 mx-auto">
+      </div>
+      <div class="carousel-item" data-bs-interval="1200">
+        <img src="./images/foodcarousel2.webp" alt="" class=" d-block w-50 mx-auto">
+      </div>
+      <div class="carousel-item" data-bs-interval="1200">
+        <img src="./images/headerfoodimg.jfif" alt="" class=" d-block w-50 mx-auto">
+      </div>
+    </div>
+   </div>
+
+   <!-- footer -->   
+   <footer>
+    <div class="address-panel fw-bold">
+      <ul>
+        <p >Habsiguda</p>
+        <a>1116111</a>
+        <a>Hyderabad</a>
+        <a>Telangana</a>
+      </ul>
+      <!-- to place img in b/w addresses -->
+      <div>
+        <img src="./images/foodfooterimg.jpg" alt="" class="footer-img d-none d-sm-block">
+      </div>
+      <ul>
+        <p>Miyapur</p>
+        <a >8898911</a>
+        <a>Hyderabad</a>
+        <a>Telangana</a>
+      </ul>
+    </div>
+  
+    <div class="copyright me-auto pt-2">
+      © 2004-2024, Sams Food land, Inc. or its affiliates ~HIMA SAMEERA.N
+    </div>
+  </footer>
+
+   <!-- javascript bundle with popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
